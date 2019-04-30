@@ -203,7 +203,7 @@ var SpotifyService = /** @class */ (function () {
     SpotifyService.prototype.authenticate = function () {
         var authUrl = 'https://accounts.spotify.com/authorize?client_id='
             + this.clientId
-            + '&redirect_uri=http://localhost:4002/&scope=user-read-private%20user-read-email&response_type=token&state=123';
+            + '&redirect_uri=https://fuzzy3.github.io/&scope=user-read-private%20user-read-email&response_type=token&state=123';
         this.http.get(authUrl, this.httpOptions).pipe()
             .subscribe(function (response) {
             console.log(response);
